@@ -1,0 +1,120 @@
+%%%
+%%% Useful Tips: 
+%%%
+%%% - author数が多い時にはand othersとすれば省略表示(et al.と表示)される．
+%%% e.g.
+%%% author={Walker, John and Britton, Nathan and Yoshida, Kazuya and Shimizu, Toshiro and Burtz, Louis-Jerome and Pala, Alperen}, 
+%%% -> author={Walker, John and others},
+%%%
+%%% - 論文情報内でのコメントは．memo="~~~~~~~"のように書けば表示されない．
+%%%
+%%% - 日本語論文には isjapanese={true}を付加することでIEEEtran_withJP.bstの日本語用設定が適用される．
+%%%
+%%% - 単語中特定のアルファベットをbstファイル内設定（change case）に関係なく大文字表示させたい場合は{}で囲む．
+%%% e.g.
+%%% title={Update on the {T}oF camrea ~~~~},
+%%% -> title={Update on the {T}o{F} camrea ~~~~},
+%%%
+%%% - 論文情報内で（bstファイルの設定を無視して）強制的に普通体，斜体にする場合ははじめに\itや\rmを置く．
+%%% e.g.
+%%% booktitle={\it Robotics and Automation (ICRA), 2012 IEEE International Conference on},
+%%% -> booktitle={\it Robotics and Automation (ICRA), 2012 IEEE International Conference on},
+
+@misc{snapbot1,
+  title={Snapbot: a Reconfigurable Legged Robot},
+  booktitle={IROS 2017},
+  author={Joohyung Kim and Alexander Alspach and Katsu Yamane},
+  year={2017},
+  isjapanese = {false}
+}
+
+
+@article{ros2,
+    author = {Steven Macenski and Tully Foote  and Brian Gerkey  and Chris Lalancette  and William Woodall },
+    title = {Robot Operating System 2: Design, architecture, and uses in the wild},
+    journal = {Science Robotics},
+    volume = {7},
+    number = {66},
+    pages = {eabm6074},
+    year = {2022},
+    doi = {10.1126/scirobotics.abm6074},
+    URL = {https://www.science.org/doi/abs/10.1126/scirobotics.abm6074}
+}
+
+@online{ros2control,
+  title     = {{ROS 2 Control}},
+  year      = {2023},
+  url       = {https://docs.ros.org/en/foxy/Releases/Release-Foxy-Fitzroy.html#ros-2-control},
+  note      = {Online documentation},
+}
+
+@misc{ros2controlDXL,
+  note={{\tt \url{https://github.com/dynamixel-community/dynamixel_hardware/tree/foxy} (accessed 2024.01.06)},
+}
+
+@article{syropod,
+  author={Benjamin Tam and Fletcher Talbot and Ryan Steindl and Alberto Elfes and Navinda Kottege},
+  journal={IEEE Access}, 
+  title={OpenSHC: A Versatile Multilegged Robot Controller}, 
+  year={2020},
+  volume={8},
+  number={},
+  pages={188908-188926},
+  keywords={},
+  doi={10.1109/ACCESS.2020.3031019},
+  ISSN={2169-3536},
+  month={},}
+
+
+%%% Memo 
+%%% example of proceedings paper and journal article database setting
+@inproceedings{hyperdog,
+  author={Mudalige, Nipun Dhananjaya Weerakkodi and Zhura, Iana and Babataev, Ildar and Nazarova, Elena and Fedoseev, Aleksey and Tsetserukou, Dzmitry},
+  booktitle={SMC 2022}, 
+  title={HyperDog: An Open-Source Quadruped Robot Platform Based on ROS2 and micro-ROS}, 
+  year={2022},
+  volume={},
+  number={},
+  pages={436-441},
+  doi={10.1109/SMC53654.2022.9945526}}
+
+@INPROCEEDINGS{snapbot2,
+  author={Kevin G. Gim and Kim Joohyung},
+  booktitle={IROS 2022}, 
+  title={Snapbot V2: a Reconfigurable Legged Robot with a Camera for Self Configuration Recognition}, 
+  year={2020},
+  volume={},
+  number={},
+  pages={4026-4031},
+  doi={10.1109/IROS45743.2020.9341279}}
+
+@inproceedings{modularrobot,
+  author={Whitman, Julian and Su, Shuang and Coros, Stelian and Ansari, Alex and Choset, Howie},
+  booktitle={IROS 2017}, 
+  title={Generating gaits for simultaneous locomotion and manipulation}, 
+  year={2017},
+  volume={},
+  number={},
+  pages={2723-2729},
+  doi={10.1109/IROS.2017.8206099}}
+
+@online{U2D2,
+  title = {Robotis},
+  url = {https://emanual.robotis.com/docs/en/parts/interface/u2d2/},
+  note = {U2D2},
+}
+
+@online{DXL,
+  title = {Robotis},
+  url = {https://emanual.robotis.com/docs/en/dxl/x/xm430-w350/},
+  note = {XM430-W350},
+}
+
+@online{moonshotGoal3B,
+  title = {JST Moonshot Project Goal 3B},
+  organization = {JST},
+  url = {https://www.jst.go.jp/moonshot/en/program/goal3/3B_yoshida.html}
+}
+
+
+%%% EOF %%%
